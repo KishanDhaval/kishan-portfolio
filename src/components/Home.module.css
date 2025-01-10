@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    
+    height: 100%;
+    width: 100%;
+    font-family: "poppins", sans-serif;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  main {
+    
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+  }
+  
+
+  
+  
+  .home {
+    /* position: fixed; */
+    background-image: repeating-linear-gradient(45deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(135deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(256,7%,84%),hsl(256,7%,84%));
+    padding: 70px 0;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .left {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    flex-direction: column;
+    height: 100%;
+    width: 55%;
+    padding: 9.5rem 9vw;
+  }
+  .left h2 {
+    font-family: "Bai Jamjuree", sans-serif;
+
+    font-stretch: 100%;
+    font-size: 3.1vw;
+    text-decoration: none solid rgb(0, 32, 87);
+    font-weight: 800;
+    color: #f77011fe;
+  }
+  
+  .left :nth-child(1) {
+    color: rgb(0, 32, 87);
+    /* color: #111; */
+  }
+  .left h3 {
+    font-family: "Bai Jamjuree", sans-serif;
+    color: rgb(0, 32, 87);
+    font-size: 1.8vw;
+  }
+  .left span {
+    color: #f77011fe;
+    /* color: #006eff; */
+  }
+ 
+  .left .social{
+    display: flex;
+    gap:1.2vw ;
+  }
+  .left .social a {
+    margin-top: 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.6vw;
+    color: #006eff;
+    height: 2.8vw;
+    width: 2.8vw;
+    background-color: black;
+    border-radius: 50%;
+    transition: box-shadow .2s ease ,background-color .2s ease , color .2s ease;
+  }
+  .social a:hover {
+    background-color: #f77011fe;
+    box-shadow: 1px 1px 10px #f77011fe;
+    /* box-shadow: 1px 1px 10px #006eff; */
+  }
+  .left .social a i{
+    /* color: #1cacff; */
+    color: white;
+  }
+  .left .social a:hover i{
+    color: #111;
+  }
+
+ .left button {
+    color: white;
+    background-color: #111;
+    margin: 1vw 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.3vw;
+    border-radius: 0.5vw;
+    padding: 1vw 1.8vw;
+    font-size: 1.2vw;
+    border: none;
+    font-weight: 700;
+    position: relative; /* Add position relative */
+    transition: background-color 0.4s;
+  }
+  
+  .left button i {
+    margin-left: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18px;
+    width: 18px;
+    font-size: 0.8vw;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 0.2s ease-in-out; /* Add transition */
+  }
+  
+  .left button:hover{
+    /* background-color: #001e69; */
+    background-color: #f77011fe;
+  }
+  .left button:hover i {
+    animation: shake 0.3s ease forwards; /* Add animation on hover */
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(1px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .right {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+    width: 45%;
+  }
+  .right .image {
+    /* border: 0.1px solid rgba(47, 46, 46, 0.473); */
+    box-shadow:  1px 1px 10px rgba(8, 8, 8, 0.228),
+    1px 1px 10px rgba(8, 8, 8, 0.228);
+    position: relative;
+    height: 26vw;
+    width: 26vw;
+    border-radius: 50%;
+    overflow: hidden;
+    background-position: bottom;
+    background-color: white;
+  }
+  .right img {
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+  }
+  
+  @media (max-width:900px) {
+    .left{
+      width: 60%;
+      gap: 0.2rem;
+    }
+    .left h2{
+      font-size: 1.7rem;
+    }
+    .left h3{
+      font-size: 1rem;
+    }
+    .left button{
+      border-radius: 0.3rem;
+      font-size: 0.7rem;
+    }
+    .left button i{
+    height: 13px;
+    width: 13px;
+    font-size: 0.45rem;
+  }
+ .left .social a{
+    height: 1.6rem;
+    width: 1.6rem;
+    font-size: 1rem;
+  }
+
+    .right{
+      width: 40%;
+      justify-content: start;
+    }
+  .right .image {
+    height: 14rem;
+    width: 14rem;
+  }
+  
+}
+
+@media (max-width:500px) {
+.home  .left{
+    gap: 0.5rem;
+  }
+  .home .left h2{
+    font-size: 1.6rem;
+  }
+  .home .left h3{
+    font-size: 1.1rem;
+  }
+ .left button{
+    padding: .5rem 0.8rem;
+    border-radius: 0.3rem;
+    font-size: 0.7rem;
+  }
+.left button i{
+  height: 15px;
+  width: 15px;
+  font-size: 0.5rem;
+  
+}
+}
+    @media (max-width:600px) {
+      
+    
+
+      .home{
+        padding-top: 70px;
+        flex-direction: column;
+        height: 100vh;
+      }
+      .left{
+        gap: 1.5vw;
+        padding: 2.5rem 6vw;
+        height: 55%;
+        width: 100%;
+        /* border-bottom: 1px solid black; */
+      }
+      .left h2{
+        font-size: 5vw;
+      }
+      .left h3{
+        font-size: 3.4vw;
+      }
+     .left button{
+        padding: 0.5rem 0.8rem;
+        border-radius: 0.3rem;
+        font-size: 0.7rem;
+      }
+    .left button i{
+      height: 15px;
+      width: 15px;
+      font-size: 0.5rem;
+      
+    }
+    .left .social{
+      gap: 2vw;
+    }
+   .left .social a{
+      height: 1.8rem;
+      width: 1.8rem;
+      font-size: 1.05rem;
+      
+    }
+  
+      .right{
+        height: 45%;
+        width: 100%;
+        justify-content: center;
+      }
+    .right .image {
+      height: 14rem;
+      width: 14rem;
+    }
+    
+      /* .left button{
+        gap: 2vw;
+        margin-top: 6vw;
+        font-size: 4.8vw;
+        border-radius: 6vw;
+        padding: 2.9vw 5vw;
+      } */
+      /* button i{
+        margin-left: 0.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 18px;
+        width: 18px;
+        font-size: 3vw;
+        border-radius: 50%;
+        background-color: white;
+      }
+      .left .social{
+        margin-top: 2vw;
+        gap: 4vw;
+      }
+      .left .social a{
+        font-size: 8vw;
+        height: 12vw;
+        width: 12vw;
+        background-color: black;
+        border-radius: 50%;
+      }
+      .right{
+        height: 45%;
+        width: 100%;
+        justify-content: center;
+        align-items: start;
+      } */
+      /* .right .image{
+         height:31vh;
+        width:  31vh;
+      } */
+  }
