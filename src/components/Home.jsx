@@ -34,13 +34,12 @@ const Home = () => {
                     <h3>I am into &nbsp;
                         <span ref={typedElement} />
                     </h3>
-                    {/* <a  href="assets/resume.pdf" download="Kishan's Resume" target='_blank'> */}
+                     <a  href="assets/kishan_prajapati_resume" download="Kishan's Resume" target='_blank'> 
                         <button >About Me<i className="ri-download-fill" /></button>
-                    {/* </a> */}
+                    </a> 
 
                     <div className={styles.social}>
                         <a target="_blank" href="https://www.linkedin.com/in/kiishan-prajapati?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BiWYunSl9Rg6xx1FzWxhNqg%3D%3D" ><i className="ri-linkedin-box-fill" /></a>
-                        <a target="_blank" href="https://www.instagram.com/_kiishan__/"><i className="ri-instagram-line" /></a>
                         <a target="_blank" href="https://github.com/KishanDhaval"><i className="ri-github-line" /></a>
                     </div>
                 </div>
