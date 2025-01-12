@@ -16,10 +16,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color:rgb(0 , 0 , 0);
 }
 
 nav h1 {
-  color: rgb(0, 32, 87);
+  /* color: rgb(0, 32, 87); */
+  /* color:rgb(0 , 0 , 0); */
   font-size: 1.6vw;
 }
 
@@ -36,7 +38,7 @@ nav h1 {
 }
 
 nav .navPart2 h4 {
-  color: rgb(0, 32, 87);
+  /* color: rgb(0, 32, 87); */
   box-sizing: border-box;
   cursor: pointer;
 }

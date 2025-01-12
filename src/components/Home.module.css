@@ -41,6 +41,7 @@
     height: 100%;
     width: 55%;
     padding: 9.5rem 9vw;
+    color: rgb(0, 0, 0);
   }
   .left h2 {
     font-family: "Bai Jamjuree", sans-serif;
@@ -49,23 +50,20 @@
     font-size: 3.1vw;
     text-decoration: none solid rgb(0, 32, 87);
     font-weight: 800;
-    color: #f77011fe;
   }
-  
-  .left :nth-child(1) {
-    color: rgb(0, 32, 87);
-    /* color: #111; */
-  }
+
   .left h3 {
     font-family: "Bai Jamjuree", sans-serif;
-    color: rgb(0, 32, 87);
     font-size: 1.8vw;
   }
   .left span {
     color: #f77011fe;
     /* color: #006eff; */
   }
- 
+  .left a button i{
+    /* color: #1cacff; */
+    color: rgb(0, 0, 0);
+  }
   .left .social{
     display: flex;
     gap:1.2vw ;
@@ -96,7 +94,7 @@
   .left .social a:hover i{
     color: #111;
   }
-
+  
  .left button {
     color: white;
     background-color: #111;
