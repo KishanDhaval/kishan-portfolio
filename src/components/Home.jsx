@@ -34,7 +34,7 @@ const Home = () => {
                     <h3>I am into &nbsp;
                         <span ref={typedElement} />
                     </h3>
-                    <a  href="assets/kishan_prajapati_resume"  download="Kishan's Resume" target='_blank'>   
+                    <a  href="./assets/kishan_prajapati_resume"  download="Kishan's Resume" target='_blank'>   
                         <button >About Me<i className="ri-download-fill" /></button>
                     </a> 
                     <div className={styles.social}>
