@@ -31,8 +31,13 @@ This is my personal portfolio website built with React and CSS. It showcases my 
 ---
 
 for portfolio update 
+
 git add .
+
 git commit -m "Your commit message"
+
 git push origin main 
+
 npm run build
+
 npm run deploy
