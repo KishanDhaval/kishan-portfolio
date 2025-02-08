@@ -1,6 +1,7 @@
 // About.jsx
 import React from 'react';
 import styles from './About.module.css';
+import { TbSend2 } from 'react-icons/tb';
 
 const About = () => {
   return (
@@ -31,7 +32,8 @@ const About = () => {
           </ul>
           <div className={styles.aboutButtons}>
             <a href="#contact" className={styles.button}>
-              <i className="ri-send-plane-line"></i> Contact Me
+            <TbSend2  d style={{fontSize: "20px"}}/>
+            Get in Touch
             </a>
           </div>
         </div>

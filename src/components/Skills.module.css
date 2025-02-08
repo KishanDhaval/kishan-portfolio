@@ -1,44 +1,66 @@
+
 .skillsContainer {
   font-family: "Bai Jamjuree", sans-serif;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .skills, .projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  .skillCard, .projectCard {
-    background-color: #f4f4f4c1;
-    border-radius: 8px;
-    padding: 1.5rem;
-    width: 200px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .skillCard:hover, .projectCard:hover {
-    transform: translateY(-8px);
-  }
-  
- .skillsContainer h2 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    color: #333;
-  }
-  
-  .skillsContainer h3 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    color: #ff8800;
-  }
-  
- .skillsContainer p {
-    font-size: 1rem;
-    color: #555;
-  }
-  
+  padding: 2rem;
+  min-height: 90vh;
+  text-align: center;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f9f9f9;
+}
+
+.skillsContainer h2{
+  font-size: 4vh;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.skillCard {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+}
+
+.skillCard:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skillIcon {
+  font-size: 3rem;
+  color: #ff8800;
+}
+
+.skillName {
+  position: absolute;
+  bottom: 10px;
+  /* background: rgba(95, 95, 95, 0.8); */
+  color: #383838;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.skillCard:hover .skillName {
+  opacity: 1;
+}

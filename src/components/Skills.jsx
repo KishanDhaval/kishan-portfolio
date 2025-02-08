@@ -1,42 +1,31 @@
 import React from 'react';
 import styles from './Skills.module.css';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa';
+import { SiMongodb, SiExpress,SiTailwindcss  } from 'react-icons/si';
+import { FaJava } from "react-icons/fa6";
 
 const skills = [
-  { name: 'HTML', level: 'Advanced' },
-  { name: 'CSS', level: 'Advanced' },
-  { name: 'JavaScript', level: 'Advanced' },
-  { name: 'React.js', level: 'Advanced' },
-  { name: 'Java', level: 'Intermediate' },
-  { name: 'Node.js', level: 'Intermediate' },
-  { name: 'Express.js', level: 'Intermediate' },
-  { name: 'MongoDB', level: 'Intermediate' },
-];
-
-const projects = [
-  { title: 'Chat App', description: 'A chat application using the MERN stack.' },
-  // Add more projects as needed
+  { name: 'HTML', icon: <FaHtml5 /> },
+  { name: 'CSS', icon: <FaCss3Alt /> },
+  { name: 'Tailwind', icon: <SiTailwindcss /> },
+  { name: 'JavaScript', icon: <FaJs /> },
+  { name: 'React.js', icon: <FaReact /> },
+  { name: 'Java', icon: <FaJava  /> },
+  { name: 'Node.js', icon: <FaNodeJs /> },
+  { name: 'Express.js', icon: <SiExpress /> },
+  { name: 'MongoDB', icon: <SiMongodb /> },
 ];
 
 const Skills = () => {
   return (
-    <div className={styles.skillsContainer} id='skill'>
+    <div className={styles.skillsContainer} id="skill">
       <h2>My Skills</h2>
       <div className={styles.skills}>
         {skills.map((skill) => (
-            <div className={styles.skillCard}>
-              <h3>{skill.name}</h3>
-              <p>{skill.level}</p>
-            </div>
-        ))}
-      </div>
-
-      <h2>My Projects</h2>
-      <div className={styles.projects}>
-        {projects.map((project) => (
-            <div className={styles.projectCard}>
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-            </div>
+          <div className={styles.skillCard} key={skill.name}>
+            <div className={styles.skillIcon}>{skill.icon}</div>
+            <p className={styles.skillName}>{skill.name}</p>
+          </div>
         ))}
       </div>
     </div>

@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import styles from './Navbar.module.css';
+import { FiMenu } from "react-icons/fi";
+import { RxCross2 } from 'react-icons/rx';
+import { LuMenu } from 'react-icons/lu';
 
 const Navbar = () => {
     const [width, setWidth] = useState(window.innerWidth);
@@ -11,7 +14,7 @@ const Navbar = () => {
         { to: "home", label: "Home" },
         { to: "about", label: "About" },
         { to: "skill", label: "Skill" },
-        { to: "education", label: "Education" },
+        // { to: "education", label: "Education" },
         { to: "projects", label: "Projects" },
         { to: "contact", label: "Contact" },
     ];
@@ -94,7 +97,7 @@ const Navbar = () => {
                         </div>
                     )} */}
                     <button className={`${styles.menu} ${styles.icon}`} onClick={() => setToggle(!toggle)}>
-                        {toggle ? <i className="ri-close-line"></i> : <i className="ri-menu-3-line"></i>}
+                        {toggle ?<RxCross2 />:<LuMenu />                        }
                     </button>
                    
                         <div  style={toggle ? {right:0 , opacity:1} : {right:"-85%" , opacity:0}}  className={styles.sideNavPart2}>

@@ -178,7 +178,7 @@
   position: relative;
   /* top: 100vh; */
   font-family: "Bai Jamjuree", sans-serif;
-  background-color: rgb(236, 236, 236);
+  background-color:#f4f4f4;
   transition: background-color 0.4s;
   height: 100vh;
   width: 100%;
@@ -275,7 +275,7 @@ a {
   margin-top: 5vw;
   width: 13vw;
   height: 29vw;
-  background-color: hsl(0, 0%, 87%);
+  background-color: rgb(236, 236, 236);
   top: -2.6vw;
   right: -3.9vw;
   border-bottom: 4px solid #f77112;

@@ -1,90 +1,154 @@
-
-
-
-.contactPage{
+/* Contact Section Styling */
+.contactSection {
     font-family: "Bai Jamjuree", sans-serif;
-    height: 100vh;
     width: 100vw;
+    min-height: 91vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 70px 0 0 0;
 }
-.container{
-    padding: 2vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-    height: 65%;
-    background-color: rgb(225, 225, 225);
-}
-.contactForm{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.2vw;
-    gap: 1.5vw;
-    outline: none;
 
+/* Container */
+.container {
+    width: 60%;
+    background: #fff;
+    padding: 3rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.contactForm input{
-    width: 100%;
-    padding: 0.6vw 1vw;
-    flex: 1 0.1 2rem
+
+/* Titles */
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
 }
-.contactForm textarea{
-    width: 100%;
-    padding: 0.6vw 1vw;
-    /* flex: 1 0 2rem */
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #555;
+    text-align: center;
+    margin-bottom: 2rem;
 }
-  .contactForm  button {
-    color: white;
-    background-color: #111;
+
+/* Contact Content */
+.contactContent {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-radius: 0.5vw;
-    padding: 0.6vw 1.5vw;
-    font-size: 1.3vw;
-    border: none;
-    font-weight: 500;
-    position: relative; /* Add position relative */
-    transition: background-color 0.4s;
-  }
- .contactForm button:hover{
-    /* background-color: #001e69; */
-    background-color: #f77011fe;
-  }
-
-  
-
-@media (max-width: 1100px) {
-    .container{
-        width: 325px;
-        gap: 5px;
-        padding: 25px;
-    }
-    .contactForm{
-        padding: 15px;
-        gap: 18px;
-    }
-    .contactForm input , textarea{
-        padding: 7px 10px;
-    }
-    .contactForm button{
-        padding: 6px 15px;
-        font-size: 14px;
-        margin-top: 5px;
-    }
-    
+    width: 100%;
+    gap: 2rem;
 }
 
-@media (max-width: 425px){
-    .container{
-    margin: 15px;
+/* Contact Form */
+.contactForm {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
 
-    }    
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    border:none;
+    outline: none;
+    background-color: #F4F4F4   ;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.contactForm textarea {
+    resize: none;
+}
+
+.contactForm button {
+    background: #111;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width:fit-content;
+}
+
+.contactForm button:hover {
+    background: #f77011;
+}
+
+.errorText {
+    color: red;
+    font-size: 0.9rem;
+}
+
+/* Contact Info (Right Side) */
+.contactInfo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.infoBox {
+    background: #f9f9f9;
+    padding: 1.1rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.infoTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.infoText {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .container {
+        width: 85%;
+    }
+
+    .contactContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactForm {
+        width: 100%;
+    }
+
+    .contactInfo {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
 }
