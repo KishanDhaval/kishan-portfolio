@@ -44,7 +44,7 @@ const Home = () => {
           </h3>
 
           <a
-            href="images/kishan_prajapati_resume.pdf"
+            href="/images/kishan_prajapati_resume.pdf"
             download="Kishan_Prajapati_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
