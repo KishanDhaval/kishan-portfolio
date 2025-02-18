@@ -15,7 +15,7 @@ const projects = [
     title: 'DevsPlatform',
     description: 'A web development learning and showcase platform where users complete frontend challenges and submit components.',
     image: devplatform,
-    link: 'https://devplatform-deployed.onrender.com/',
+    link: 'https://devplatform-xrdz.onrender.com/',
   },
   {
     title: 'E-Commerce Site',
