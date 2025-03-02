@@ -27,13 +27,13 @@ const projects = [
     title: 'Real-Time Chat App',
     description: 'A real-time chat application built using the MERN stack, featuring instant messaging , searching user , instant notificaiton and a sleek UI.',
     image: chatApp,
-    link: 'https://github.com/KishanDhaval/REAL-TIME-CHAT-APPLICATION',
+    link: 'https://real-time-chat-application-4s2c.onrender.com/',
   },
   {
     title: 'Real-Time Collab Tool',
     description: 'A collaborative application allowing multiple users to edit documents in real time, similar to Google Docs.',
     image: Collabe,
-    link: 'https://github.com/KishanDhaval/REAL-TIME-COLLABORATION-TOOL',
+    link: 'https://real-time-collaboration-tool-mqya.onrender.com/',
   },
   {
     title: 'Productivity Extension',
