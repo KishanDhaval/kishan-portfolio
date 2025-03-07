@@ -57,7 +57,7 @@ const projects = [
     title: 'Spliter',
     description: 'A Splitwise-like expense tracking application that helps users split and manage shared expenses effortlessly.',
     image: spliter,
-    link: '',
+    link: 'https://spliter-cf6o.onrender.com/',
   }
 ];
 
