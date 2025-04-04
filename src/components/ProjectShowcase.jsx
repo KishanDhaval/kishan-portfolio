@@ -33,6 +33,12 @@ const DeployedProject = [
     link: 'https://devplatform-xrdz.onrender.com/',
   },
   {
+    title: 'Spliter',
+    description: 'A Splitwise-like expense tracking application that helps users split and manage shared expenses effortlessly.',
+    image: spliter,
+    link: 'https://spliter-cf6o.onrender.com/',
+  },
+  {
     title: 'E-Commerce Site',
     description: 'A full-stack e-commerce website with product listings, cart functionality , search, filtering , and secure payments using MERN stack.',
     image: eCommerce,
@@ -54,7 +60,7 @@ const DeployedProject = [
     title: 'Productivity Extension',
     description: 'A browser extension to enhance productivity by tracking tasks, helps to limiting distractions, and optimizing workflow.',
     image: productivityTracker,
-    link: 'https://github.com/KishanDhaval/PRODUCTIVITY-TRACKER',
+    link: 'https://github.com/KishanDhaval/Productivity-Extention',
   },
   {
     title: 'Bhagavad Gita Insights Extension',
@@ -68,12 +74,6 @@ const DeployedProject = [
     image: whether,
     link: 'https://kishandhaval.github.io/whether/',
   },
-  {
-    title: 'Spliter',
-    description: 'A Splitwise-like expense tracking application that helps users split and manage shared expenses effortlessly.',
-    image: spliter,
-    link: 'https://spliter-cf6o.onrender.com/',
-  }
 ];
 
 const BasicProject = [
