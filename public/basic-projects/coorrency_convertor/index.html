@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Corrency Converter</h1>
+        <form>
+          <div class="input">
+            <label for="input">Enter Currency</label>
+            <input type="text" name="input" value="1" />
+          </div>
+          <div class="dropdown">
+            <div class="from">
+                <p>From</p>
+                <div class="select-container">
+                    <img src="https://flagsapi.com/US/flat/64.png" />
+                    <select name="from" id="from"></select>
+                </div>
+            </div>
+              <i class="ri-arrow-left-right-fill"></i>
+              <div class="to">
+                <p>To</p>
+                <div class="select-container">
+                    <img src="https://flagsapi.com/IN/flat/64.png" />
+                    <select name="to" id="from"></select>
+                </div>
+            </div>
+
+          </div>
+          <h5>Welcomet to Page</h5>
+          <button type="submit">Get Equal Currency</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

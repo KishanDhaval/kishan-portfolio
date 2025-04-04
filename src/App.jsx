@@ -1,24 +1,17 @@
-
-import './App.css'
-import About from './components/About'
-import Contact from './components/Contact'
-import Home from './components/Home'
-import Navbar from './components/Navbar'
-import ProjectShowcase from './components/ProjectShowcase'
-import Skills from './components/Skills'
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import LandingPage from "./pages/LandingPage";
+import ProjectPage from "./pages/ProjectPage";
 
 function App() {
- 
   return (
-    <>     
-      <Navbar/>     
-      <Home/>
-      <About/>
-      <Skills/>
-      <ProjectShowcase/>
-      <Contact/>
+    <>
+      <Routes>
+        <Route path="/kishan-portfolio" element={<LandingPage /> } exact />
+        <Route path="/kishan-portfolio/project/:projectName" element={<ProjectPage />} />
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,7 +1,7 @@
 // About.jsx
-import React from 'react';
-import styles from './About.module.css';
-import { TbSend2 } from 'react-icons/tb';
+import React from "react";
+import styles from "./About.module.css";
+import { TbSend2 } from "react-icons/tb";
 
 const About = () => {
   return (
@@ -12,7 +12,11 @@ const About = () => {
         </h2>
         <div className={styles.aboutPerfil}>
           <div className={styles.aboutImage}>
-            <img src='./images/self.jpg' alt="About" className={styles.aboutImg} />
+            <img
+              src="./images/self.jpg"
+              alt="About"
+              className={styles.aboutImg}
+            />
             <div className={styles.aboutShadow}></div>
             <div className={styles.geometricBox}></div>
             <div className={styles.aboutBox}></div>
@@ -20,26 +24,38 @@ const About = () => {
         </div>
         <div className={styles.aboutInfo}>
           <p className={styles.aboutDescription}>
-            Passionate about creating <b>Web Pages</b> using
-            <b> MERN stack</b>, like to <b>solve problem</b> as well as explore new problem.
+            Passionate about creating <b>Web Pages</b> using the{" "}
+            <b>MERN stack</b>, I enjoy solving problems and continuously
+            exploring new technologies. I'm also actively involved in{" "}
+            <b>Competitive Programming</b>
           </p>
+
           <ul className={styles.aboutList}>
             <li className={styles.aboutItem}>
-              <b>My Skills Are:</b> HTML, CSS, JavaScript,
-              React, Git & GitHub, ExpressJs, Nodejs &
-              MongoDB.
+              <b>Languages:</b> HTML, CSS, JavaScript, Java.
+            </li>
+            <li className={styles.aboutItem}>
+              <b>Frameworks & Libraries:</b> React.js, Tailwind CSS, Express.js,
+              Node.js, NumPy, OpenCV, Matplotlib.
+            </li>
+            <li className={styles.aboutItem}>
+              <b>Databases:</b> MongoDB, MySQL.
+            </li>
+            <li className={styles.aboutItem}>
+              <b>Tools:</b> Git, GitHub, Postman, Jupyter.
             </li>
           </ul>
+
           <div className={styles.aboutButtons}>
             <a href="#contact" className={styles.button}>
-            <TbSend2  d style={{fontSize: "20px"}}/>
-            Get in Touch
+              <TbSend2 d style={{ fontSize: "20px" }} />
+              Get in Touch
             </a>
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default About;

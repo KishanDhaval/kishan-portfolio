@@ -3,7 +3,7 @@
   font-family: "Bai Jamjuree", sans-serif;
   text-align: center;
   padding: 50px 20px;
-  background-color: #f4f4f4;
+  background-color: #fafcfe;
   min-height: 100vh;
 }
 
@@ -18,6 +18,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  margin-bottom: 50px;
 }
 
 .projectCard {

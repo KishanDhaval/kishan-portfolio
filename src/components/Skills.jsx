@@ -1,65 +1,64 @@
-import React, { useState, useEffect } from 'react';
-import Draggable from 'react-draggable';
-import styles from './Skills.module.css';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiTailwindcss } from 'react-icons/si';
-import { FaJava } from "react-icons/fa6";
+import React from "react";
+import styles from "./Skills.module.css";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaJava,
+  FaGitAlt,
+  FaDatabase,
+} from "react-icons/fa";
+import {
+  SiMongodb,
+  SiExpress,
+  SiTailwindcss,
+  SiNumpy,
+  SiOpencv,
+  SiJupyter,
+  SiPostman,
+  SiMysql,
+} from "react-icons/si";
+import { FaChartLine } from "react-icons/fa";
+import { DiPython } from "react-icons/di";
+import { HiOutlineChartBar } from "react-icons/hi"; // For Seaborn
+
 
 const skills = [
-  { name: 'HTML', icon: <FaHtml5 /> },
-  { name: 'CSS', icon: <FaCss3Alt /> },
-  { name: 'Tailwind', icon: <SiTailwindcss /> },
-  { name: 'JavaScript', icon: <FaJs /> },
-  { name: 'React.js', icon: <FaReact /> },
-  { name: 'Java', icon: <FaJava /> },
-  { name: 'Node.js', icon: <FaNodeJs /> },
-  { name: 'Express.js', icon: <SiExpress /> },
-  { name: 'MongoDB', icon: <SiMongodb /> },
+  { name: "HTML", icon: <FaHtml5 />, color: "#e34c26" },
+  { name: "CSS", icon: <FaCss3Alt />, color: "#264de4" },
+  { name: "Tailwind", icon: <SiTailwindcss />, color: "#38bdf8" },
+  { name: "JavaScript", icon: <FaJs />, color: "#f0db4f" },
+  { name: "React.js", icon: <FaReact />, color: "#61dbfb" },
+  { name: "Java", icon: <FaJava />, color: "#f89820" },
+  { name: "Python", icon: <DiPython />, color: "#3776AB" },
+  { name: "Node.js", icon: <FaNodeJs />, color: "#68a063" },
+  { name: "Express.js", icon: <SiExpress />, color: "#000000" },
+  { name: "MongoDB", icon: <SiMongodb />, color: "#4DB33D" },
+  { name: "MySQL", icon: <SiMysql />, color: "#00758F" },
+
+  { name: "NumPy", icon: <SiNumpy />, color: "#013243" },
+  { name: "OpenCV", icon: <SiOpencv />, color: "#5C3EE8" },
+  { name: "Matplotlib", icon: <FaChartLine />, color: "#11557c" },
+  { name: "Seaborn", icon: <HiOutlineChartBar />, color: "#4c72b0" },
+  { name: "Jupyter", icon: <SiJupyter />, color: "#f37626" },
+  { name: "Git", icon: <FaGitAlt />, color: "#f1502f" },
+  { name: "Postman", icon: <SiPostman />, color: "#FF6C37" },
 ];
 
-const getRandomPosition = (existingPositions) => {
-  let attempts = 0;
-  let newPos;
-  const minDistance = 100; // Minimum pixel distance
-
-  do {
-    newPos = {
-      x: Math.random() * (window.innerWidth - 150), // Ensure it stays within the screen width
-      y: Math.random() * (window.innerHeight - 150), // Ensure it stays within the screen height
-    };
-    attempts++;
-    if (attempts > 100) break; // Avoid infinite loop
-  } while (
-    existingPositions.some(
-      pos => Math.abs(pos.x - newPos.x) < minDistance && Math.abs(pos.y - newPos.y) < minDistance
-    )
-  );
-
-  return newPos;
-};
-
 const Skills = () => {
-  const [positions, setPositions] = useState([]);
-
-  useEffect(() => {
-    const newPositions = [];
-    skills.forEach(() => {
-      newPositions.push(getRandomPosition(newPositions));
-    });
-    setPositions(newPositions);
-  }, []);
-
   return (
-    <div className={styles.skillsContainer} id="skill">
-      <h2>My Skills</h2>
-      <div className={styles.skills}>
-        {skills.map((skill, index) => (
-          <Draggable key={skill.name} defaultPosition={positions[index]}>
-            <div className={styles.skillCard}>
-              <div className={styles.skillIcon}>{skill.icon}</div>
-              <p className={styles.skillName}>{skill.name}</p>
+    <div className={styles.skillsSection} id="skill">
+      <h2 className={styles.heading}>My Skills</h2>
+      <div className={styles.skillsGrid}>
+        {skills.map((skill) => (
+          <div key={skill.name} className={styles.skillCard}>
+            <div className={styles.icon} style={{ color: skill.color }}>
+              {skill.icon}
             </div>
-          </Draggable>
+            <p className={styles.name}>{skill.name}</p>
+          </div>
         ))}
       </div>
     </div>

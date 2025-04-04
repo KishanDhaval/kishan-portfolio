@@ -4,9 +4,11 @@ import React, { useEffect, useRef } from "react";
 import styles from "./Home.module.css";
 import Typed from "typed.js";
 import { RxLinkedinLogo } from "react-icons/rx";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const typedElement = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const options = {
@@ -44,12 +46,10 @@ const Home = () => {
           </h3>
 
           <a
-            href="images/kishan_prajapati_resume.pdf"
-            download="Kishan_Prajapati_Resume.pdf"
+            href="https://www.resumemate.io/resume/4xmHCEEFRYFMWXS"
             target="_blank"
-            rel="noopener noreferrer"
           >
-            <button>
+            <button >
               About Me <FaArrowAltCircleDown />
             </button>
           </a>

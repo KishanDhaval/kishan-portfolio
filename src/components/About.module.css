@@ -178,7 +178,7 @@
   position: relative;
   /* top: 100vh; */
   font-family: "Bai Jamjuree", sans-serif;
-  background-color:#f4f4f4;
+  background-color: #fafcfe;
   transition: background-color 0.4s;
   height: 100vh;
   width: 100%;
@@ -216,7 +216,7 @@ a {
   font-size: 2.5vw;
   width: max-content;
   margin: 0.75rem auto 2rem;
-  top: 18vw;
+  top: 16.5vw;
   right: 38vw;
 }
 
@@ -258,7 +258,7 @@ a {
 .aboutImage img {
   margin: 5vw 0 0 8vw;
   border-radius: 1vw;
-  border: 0.5vw solid white;
+  border: 0.5vw solid #ffffff;
   height: 25vw;
   position: relative;
   z-index: 1;
@@ -275,10 +275,10 @@ a {
   margin-top: 5vw;
   width: 13vw;
   height: 29vw;
-  background-color: rgb(236, 236, 236);
+  background-color: #e6eff8;
   top: -2.6vw;
   right: -3.9vw;
-  border-bottom: 4px solid #f77112;
+  border-bottom: 4px solid #ff8a37;
   transition: background-color 0.4s;
 }
 
@@ -353,7 +353,7 @@ a {
   list-style: square;
   color: hsl(0, 0%, 0%);
   margin-bottom: 1.8vh;
-  font-size: 1.8vh;
+  font-size: 2vh;
 }
 
 /* BUTTON */
