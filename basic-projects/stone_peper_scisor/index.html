@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stone paper scissor</title>
+</head>
+<style>
+    .red {
+        background-color: rgba(255, 1, 1, 1);
+        color: white;
+    }
+
+    .green {
+        background-color: green;
+        color: white;
+    }
+
+    .default {
+        background-color: white;
+        color: #3C3633;
+    }
+
+
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #EEEDEB;
+    }
+
+    /* Insta redirect */
+    .sign {
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sign .insta a {
+        color: #410d0d;
+        text-decoration: none;
+    }
+
+    .sign .insta a span {
+        top: 18px;
+        position: absolute;
+        top: 4px;
+    }
+
+    .sign .insta svg {
+        padding: 5px;
+        width: 15px;
+    }
+
+
+    /* Intro Part */
+    .heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 90vh;
+        /* width: 100vmin; */
+        margin: auto;
+        /* border: 2px solid black; */
+    }
+
+    .img img {
+        height: 200px;
+        filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.318));
+    }
+
+    .text {
+        font-size: 2rem;
+        font-family: cursive;
+    }
+
+    .startbtn button {
+        font-size: 2rem;
+        padding: 10px;
+        border-radius: 0.5rem;
+        background-color: #E0CCBE;
+        margin-top: 20px;
+        color: #3C3633;
+    }
+
+
+    /* secont part(Game part) */
+    .game {
+        gap: 30px;
+        flex-direction: column;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game .icon {
+        gap: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game .size img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .score {
+        height: 20vmin;
+        gap: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    .com {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .you {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .result {
+        font-size: 2rem;
+        border: 2px solid #000000;
+        /* color: #3C3633; */
+        border-radius: 0.5rem;
+        padding: 5px 40px;
+        width: 250px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .numgame {
+        font-size: 1.5rem;
+    }
+
+    .resetbtn{
+        display: flex;
+        justify-content: space-between; 
+        width: 300px;
+    }
+    .resetbtn button {
+        font-size: 2rem;
+        padding: 10px;
+        border-radius: 0.5rem;
+        background-color: #E0CCBE;
+        margin-top: 20px;
+        color: #3C3633;
+    }
+
+    .size :active {
+        box-sizing: border-box;
+        border: 2px solid rgba(3, 3, 3, 0.19);
+        border-radius: 50%;
+    }
+
+    .homebtn {
+        margin-top: 19px;
+        padding: 10px;
+        font-size: 1.2rem;
+        font-family: cursive;
+        text-decoration: none;
+    }
+
+    .homebtn svg {
+       
+        padding: 5px;
+        width: 30px;
+    }
+</style>
+
+<body>
+    <main>
+        <div class="sign">
+            <div class="insta">
+                <a target="_blank" href="https://www.instagram.com/_kiishan__/">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
+                    <span>_kiishan_</span>
+            </div>
+            </a>
+        </div>
+        <div class="heading">
+            <div class="img">
+                <img src="img.png" alt="">
+            </div>
+            <div class="text">
+                Rock , Peper ,Scissor
+            </div>
+            <div class="startbtn">
+                <button>Start Game!</button>
+            </div>
+        </div>
+
+        <div class="game">
+            <div class="score">
+                <div class="com">
+                    <div class="com1">0</div>
+                    <div>Com</div>
+                </div>
+                <div class="you">
+                    <div class="you1">0</div>
+                    <div>You</div>
+                </div>
+            </div>
+            <div class="result">Let's Play Game</div>
+            <div class="icon">
+                <div id="rock" class=" size choice">
+                    <img src="rock (1).png">
+                </div>
+                <div id="peper" class=" size choice">
+                    <img src="paper.png" alt="">
+                </div>
+                <div id="scissor" class=" size choice">
+                    <img src="scissor.png" alt="">
+                </div>
+            </div>
+
+
+
+
+            <div class="numgame">
+                Number of Round
+            </div>
+            <div class="resetbtn ">
+                <button>Reset Game...</button>
+                <div class="homebtn">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512">
+                        <path
+                            d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+                    </svg> 
+                </div> 
+            </div>
+
+        </div>
+
+
+     
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

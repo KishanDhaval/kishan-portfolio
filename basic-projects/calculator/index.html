@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .calculator {
+      width: 28%;
+      border: 1px solid black;
+      padding: 10px 0 15px 0;
+      background-color: rgb(66, 66, 66);
+      position: relative;
+      border-radius: 8px;
+    }
+    .input {
+      text-align: center;
+      width: 100%;
+      padding: 10px 0;
+      margin-bottom: 65px;
+    }
+    .input input {
+      outline: none;
+      background-color: white;
+      width: 86%;
+      font-size: 2rem;
+      border-radius: 8px;
+      padding: 15px 10px;
+      background-color: rgba(31, 255, 251, 0.511);
+      text-align: right;
+    }
+    .keys {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+    }
+    .key {
+      cursor: pointer;
+      box-shadow: 0px 4px 2px rgb(255, 255, 255);
+      box-sizing: border-box;
+      width: 21%;
+      border: none;
+      font-size: 2rem;
+      text-align: center;
+      font-weight: 600;
+      background-color: rgb(207, 207, 207);
+      border-radius: 8px;
+      margin: 8px 5px;
+      padding: 5px 0;
+      outline: none;
+    }
+    .clearBtn {
+      position: absolute;
+      right: 3%;
+      top: 24%;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div  class="input">
+          <input type="text" value="Hello!!!" id="inputData" readonly />
+        </div>
+        <div class="keys">
+          <button class="clearBtn key">C</button>
+          <button type="button" class="key">8</button>
+          <button type="button" class="key">9</button>
+          <button type="button" class="key">7</button>
+          <button type="button" class="key">/</button>
+          <button type="button" class="key">4</button>
+          <button type="button" class="key">5</button>
+          <button type="button" class="key">6</button>
+          <button type="button" class="key">*</button>
+          <button type="button" class="key">1</button>
+          <button type="button" class="key">2</button>
+          <button type="button" class="key">3</button>
+          <button type="button" class="key">-</button>
+          <button type="button" class="key">0</button>
+          <button type="button" class="key">.</button>
+          <button type="button" class="key">+</button>
+          <button type="button" class="key">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const inputField = document.getElementById("inputData")
+
+      document.addEventListener("keydown", (e) => {
+        const key = e.key;
+
+        if (
+          (key >= "0" && key <= "9") ||
+          key === "+" ||
+          key === "-" ||
+          key === "*" ||
+          key === "/"
+        ) {
+          inputField.value += key;
+        } else if (key === "C" || key === "Escape") {
+          inputField.value = "";
+        } else if (key === "=" || key === "Enter") {
+          const result = calculate(inputField.value);
+          inputField.value = result;
+        } else if (key === "Backspace") {
+          inputField.value = inputField.value.slice(0, -1);
+        }
+
+        e.preventDefault();
+      });
+
+      document
+        .querySelector(".keys")
+        .addEventListener("click", function (event) {
+          if (event.target.classList.contains("key")) {
+            const key = event.target.innerText;
+
+            if (key === "C") {
+              inputField.value = "";
+            } else if (key === "=") {
+              const result = calculate(inputField.value);
+              inputField.value = result;
+            } else {
+              inputField.value += key;
+            }
+          }
+        });
+
+      function calculate(expression) {
+        const numbers = expression.split(/([+\-*/])/)
+
+        let total = parseFloat(numbers[0]);
+
+        for (let i = 1; i < numbers.length; i += 2) {
+          const operator = numbers[i];
+          const nextNumber = parseFloat(numbers[i + 1]);
+
+          if (operator === "+") {
+            total += nextNumber;
+          } else if (operator === "-") {
+            total -= nextNumber;
+          } else if (operator === "*") {
+            total *= nextNumber;
+          } else if (operator === "/") {
+            total /= nextNumber;
+          }
+        }
+
+        return total;
+      }
+    </script>
+  </body>
+</html>
