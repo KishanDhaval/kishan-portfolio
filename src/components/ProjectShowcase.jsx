@@ -11,6 +11,7 @@ import eCommerce from "../assets/Images/eCommerce.png"
 import Collabe from "../assets/Images/Collabe.png"
 import chatApp from "../assets/Images/chatApp.png"
 import spliter from "../assets/Images/spliter.png"
+import examManagement from "../assets/Images/examManagement.png"
 
 // importing images for basic projects
 import calculator from "../assets/Images/calculator.png"
@@ -74,6 +75,12 @@ const DeployedProject = [
     image: whether,
     link: 'https://kishandhaval.github.io/whether/',
   },
+  {
+    title: 'Exam Management',
+    description: 'A web application that allows teachers to create exams with multiple questions, set durations, and assign start and end times, while students can take exams securely based on their role.',
+    image: examManagement, 
+    link: 'https://github.com/KishanDhaval/Exam-management/blob/main/README.md', 
+  }
 ];
 
 const BasicProject = [
