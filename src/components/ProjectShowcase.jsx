@@ -12,6 +12,7 @@ import Collabe from "../assets/Images/Collabe.png"
 import chatApp from "../assets/Images/chatApp.png"
 import spliter from "../assets/Images/spliter.png"
 import examManagement from "../assets/Images/examManagement.png"
+import knowyourown from "../assets/Images/knowyourown.png"
 
 // importing images for basic projects
 import calculator from "../assets/Images/calculator.png"
@@ -40,11 +41,29 @@ const DeployedProject = [
     link: 'https://spliter-cf6o.onrender.com/',
   },
   {
+    title: 'Know Your Own',
+    description: 'An interactive web application that lets users explore detailed information about Indian states and districts using a clickable map.',
+    image: knowyourown,
+    link: 'https://know-your-own.vercel.app/',
+  },
+  {
+    title: 'Productivity Extension',
+    description: 'A browser extension to enhance productivity by tracking tasks, helps to limiting distractions, and optimizing workflow.',
+    image: productivityTracker,
+    link: 'https://github.com/KishanDhaval/Productivity-Extention',
+  },
+  {
     title: 'E-Commerce Site',
     description: 'A full-stack e-commerce website with product listings, cart functionality , search, filtering , and secure payments using MERN stack.',
     image: eCommerce,
     link: 'https://e-commerce-client-side-six.vercel.app/',
   },  
+  {
+    title: 'Exam Management',
+    description: 'A web application that allows teachers to create exams with multiple questions, set durations, and assign start and end times, while students can take exams securely based on their role.',
+    image: examManagement, 
+    link: 'https://github.com/KishanDhaval/Exam-management/blob/main/README.md', 
+  },
   {
     title: 'Real-Time Chat App',
     description: 'A real-time chat application built using the MERN stack, featuring instant messaging , searching user , instant notificaiton and a sleek UI.',
@@ -58,12 +77,6 @@ const DeployedProject = [
     link: 'https://real-time-collaboration-tool-mqya.onrender.com/',
   },
   {
-    title: 'Productivity Extension',
-    description: 'A browser extension to enhance productivity by tracking tasks, helps to limiting distractions, and optimizing workflow.',
-    image: productivityTracker,
-    link: 'https://github.com/KishanDhaval/Productivity-Extention',
-  },
-  {
     title: 'Bhagavad Gita Insights Extension',
     description: 'A browser extension that provides daily insights and verses from the Bhagavad Gita to inspire users.',
     image: bhagvatGita,
@@ -75,12 +88,6 @@ const DeployedProject = [
     image: whether,
     link: 'https://kishandhaval.github.io/whether/',
   },
-  {
-    title: 'Exam Management',
-    description: 'A web application that allows teachers to create exams with multiple questions, set durations, and assign start and end times, while students can take exams securely based on their role.',
-    image: examManagement, 
-    link: 'https://github.com/KishanDhaval/Exam-management/blob/main/README.md', 
-  }
 ];
 
 const BasicProject = [
