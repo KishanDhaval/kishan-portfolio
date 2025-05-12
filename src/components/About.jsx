@@ -48,7 +48,7 @@ const About = () => {
 
           <div className={styles.aboutButtons}>
             <a href="#contact" className={styles.button}>
-              <TbSend2 d style={{ fontSize: "20px" }} />
+              <TbSend2 style={{ fontSize: "20px" }} />
               Get in Touch
             </a>
           </div>
