@@ -21,7 +21,7 @@ const DeployedProject = [
     title: 'DevsPlatform',
     description: 'A web development learning and showcase platform where users complete frontend challenges and submit components.',
     image: devplatform,
-    link: 'https://devplatform-xrdz.onrender.com/',
+    link: 'https://dev-platform-one.vercel.app/',
   },
   {
     title: 'Spliter',
@@ -57,7 +57,7 @@ const DeployedProject = [
     title: 'Exam Management',
     description: 'A web application that allows teachers to create exams with multiple questions, set durations, and assign start and end times, while students can take exams securely based on their role.',
     image: examManagement,
-    link: 'https://exam-managment.vercel.app/dashboard/student',
+    link: 'https://exam-managment.vercel.app/',
   },
   {
     title: 'Real-Time Chat App',
