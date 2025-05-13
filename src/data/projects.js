@@ -57,7 +57,7 @@ const DeployedProject = [
     title: 'Exam Management',
     description: 'A web application that allows teachers to create exams with multiple questions, set durations, and assign start and end times, while students can take exams securely based on their role.',
     image: examManagement,
-    link: 'https://github.com/KishanDhaval/Exam-management/blob/main/README.md',
+    link: 'https://exam-managment.vercel.app/dashboard/student',
   },
   {
     title: 'Real-Time Chat App',
