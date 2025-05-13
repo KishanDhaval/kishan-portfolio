@@ -27,7 +27,7 @@ const DeployedProject = [
     title: 'Spliter',
     description: 'A Splitwise-like expense tracking application that helps users split and manage shared expenses effortlessly.',
     image: spliter,
-    link: 'https://spliter-cf6o.onrender.com/',
+    link: 'https://spliter-self.vercel.app/',
   },
   {
     title: 'Know Your Own',
