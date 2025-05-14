@@ -2,7 +2,7 @@
 
 This is my personal portfolio website built with React and CSS. It showcases my skills, projects, and experience as a web developer. The website also includes a contact form powered by Formspree for email communication.  
 
-🔗 **Live Portfolio**: ([https://kishandhaval.github.io/kishan-portfolio/](https://kishandhaval.github.io/portfolio/) 
+🔗 **Live Portfolio**: ([https://kishandhaval.github.io/portfolio/](https://kishandhaval.github.io/portfolio/) 
 
 ---
 
