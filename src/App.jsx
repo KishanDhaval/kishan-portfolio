@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/kishan-portfolio" element={<LandingPage /> } exact />
-        <Route path="/kishan-portfolio/project/:projectName" element={<ProjectPage />} />
+        <Route path="/portfolio" element={<LandingPage /> } exact />
+        <Route path="/portfolio/project/:projectName" element={<ProjectPage />} />
       </Routes>
     </>
   );
